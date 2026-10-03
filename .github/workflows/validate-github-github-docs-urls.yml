@@ -34,10 +34,10 @@ jobs:
     runs-on: ubuntu-20.04-xl
     steps:
       - name: Check out repo's default branch
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: ./.github/actions/node-npm-setup
 
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           token: ${{ secrets.DOCS_BOT_PAT_READPUBLICKEY }}
           repository: github/github
